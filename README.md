@@ -2,7 +2,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <br/>
 
  # Book-Store
 
@@ -92,10 +91,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 <br>
 
-git clone https://github.com/leloufadel/Bookstore.git
+git clone https://github.com/leloufadel/bookstore.git
 <br>
 
-cd `Bookstore.git`
+cd `bookstore.git`
 
 
 ### Install
@@ -132,7 +131,7 @@ You can deploy this project using: GitHub Pages
 👤 **lala Aicha**
 
 - [GitHub](https://github.com/leloufadel)
-- 
+- [LinkedIn](https://www.linkedin.com/in/lala-aicha-el-vadel-8563a6202/)
 - [Twitter](https://twitter.com/leloufadel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -170,7 +169,7 @@ If you like this project give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to acknowledge and give credit to Microverse and  Usman Suleiman Babakolo.
+I would like to acknowledge and give credit to Microverse.
 
 
 
