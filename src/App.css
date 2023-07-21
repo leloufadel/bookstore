@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.active {
+  opacity: 0.6;
+  color: #122d47;
+  border-bottom: 2px solid #0290ff;
+  transform: scale(0.5);
+}

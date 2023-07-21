@@ -1,0 +1,48 @@
+.headerContainer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.Logo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+
+.navList ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+.headBtn {
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background-color: #fff;
+}
