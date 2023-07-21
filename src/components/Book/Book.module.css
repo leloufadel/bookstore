@@ -1,45 +1,50 @@
 .listContainer {
-    width: 80rem;
-    height: 11rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13rem;
-    border: 1px solid #888;
-  }
-  .firstPara{
-    color:dimgray;
-  }
-  .secondPara{
-    font-size: .875rem;
-    font-weight: 300;
-    color: #4386bf;
-  }
-  .items h2{
-    font-weight: 700;
-    color: #121212;
-  }
-  .actionBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
-  }
-  
-  .actionBtn button {
-    background-color: #fff;
-    border: none;
-    font-weight: 300;
-    color: #4386bf;
-  }
-  .progress {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-  
-  .progress p {
-    margin: 0;
-    font-size: 1rem; 
-    padding: 0.2rem 0; 
-  }
+  width: 80rem;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  border: 1px solid #888;
+}
+
+.firstPara {
+  color: dimgray;
+}
+
+.secondPara {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.items h2 {
+  font-weight: 700;
+  color: #121212;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.actionBtn button {
+  background-color: #fff;
+  border: none;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress p {
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.2rem 0;
+}
