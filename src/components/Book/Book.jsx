@@ -23,7 +23,7 @@ const Book = () => (
     <div>
       <p>Current Chapter</p>
       <p>Chapter 17</p>
-      <button type="button">UPDATE PROGRESS</button>
+      <button className={classes.btnupdate} type="button">UPDATE PROGRESS</button>
     </div>
   </div>
 );

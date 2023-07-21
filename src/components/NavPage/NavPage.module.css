@@ -2,9 +2,7 @@
   width: 100%;
   height: 6rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
@@ -38,11 +36,4 @@
   line-height: 1.2;
   letter-spacing: 1.5px;
   color: #333;
-}
-
-.headBtn {
-  padding: 1.2rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 100%;
-  background-color: #fff;
 }

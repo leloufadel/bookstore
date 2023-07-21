@@ -2,7 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 // import NoPageFound from './pages/NoPageFound';
 import NavPage from './components/NavPage/NavPage';
-// import CategoriesPage from './pages/CategoriesPage';
+import CategoriesPage from './pages/CatagoriesPage';
 import BooksPage from './pages/BooksPage';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <NavPage />
       <Routes>
         <Route path="/" element={<BooksPage />} />
+        <Route path="categories" element={<CategoriesPage />} />
       </Routes>
     </div>
   );

@@ -37,6 +37,15 @@
   color: #4386bf;
 }
 
+.btnupdate {
+  background-color: #0969da;
+  color: lightblue;
+  border: #0969da;
+  font-size: large;
+  font-size: 12px;
+  padding: 15px 32px;
+}
+
 .progress {
   display: flex;
   flex-direction: column;

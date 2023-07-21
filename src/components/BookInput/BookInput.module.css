@@ -7,6 +7,10 @@
   padding-left: 15rem;
 }
 
+form .button {
+  background-color: blue;
+}
+
 .inputs {
   display: flex;
   align-items: center;
@@ -28,6 +32,9 @@
   padding: 1rem 3rem;
   font-size: 1.6rem;
   font-weight: 600;
+  background-color: #0969da;
+  color: aliceblue;
+  border: none;
 }
 
 .inputs input::placeholder {
