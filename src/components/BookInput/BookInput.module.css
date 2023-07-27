@@ -1,0 +1,44 @@
+.form {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 15rem;
+}
+
+form .button {
+  background-color: blue;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.bookInput {
+  width: 40rem;
+  height: 3rem;
+}
+
+.authorInput {
+  width: 20rem;
+  height: 3rem;
+}
+
+.inputs button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #0969da;
+  color: aliceblue;
+  border: none;
+}
+
+.inputs input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
