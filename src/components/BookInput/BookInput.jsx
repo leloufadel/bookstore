@@ -3,10 +3,13 @@ import { useDispatch } from 'react-redux';
 import classes from './BookInput.module.css';
 import { addBook } from '../../redux/books/booksSlice';
 
+import Button from '../common/button';
+
 const BookInput = () => {
   const [bookTitle, setBookTitle] = useState('');
   const [authorName, setAuthorName] = useState('');
   const dispatch = useDispatch();
+
   const handleAddBook = (e) => {
     e.preventDefault();
     const newBook = {
@@ -30,6 +33,7 @@ const BookInput = () => {
           name=""
           id="bookInput"
           placeholder="Book title"
+          value={bookTitle}
           onChange={(e) => setBookTitle(e.target.value)}
         />
         <input
@@ -38,11 +42,13 @@ const BookInput = () => {
           name=""
           placeholder="Author"
           id="authorInput"
+          value={authorName}
           onChange={(e) => setAuthorName(e.target.value)}
         />
-        <button type="submit">ADD BOOK</button>
+        <Button onClick={handleAddBook}>ADD BOOK</Button>
       </div>
     </form>
   );
 };
+
 export default BookInput;
