@@ -1,31 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/booksSlice';
+import { deleteBook, removeBook } from '../../redux/books/booksSlice';
 import classes from './Book.module.css';
 import CircularProgress from './CircularProgress';
-import Button from '../common/button';
 
-const Book = ({ book }) => {
+const Book = ({
+  category, title, author, itemId,
+}) => {
   const dispatch = useDispatch();
-
-  const handleRemoveBook = () => {
-    dispatch(removeBook(book.item_id));
+  const handleRemoveBook = (id) => {
+    dispatch(removeBook(id));
+    dispatch(deleteBook(id));
   };
 
   return (
     <li className={classes.listContainer}>
       <div>
-        <div className={classes.items}>
-          <p className={classes.firstPara}>{book.category}</p>
-          <h2>{book.title}</h2>
-          <p className={classes.secondPara}>{book.author}</p>
+        <div>
+          <p>{category}</p>
+          <h2>{title}</h2>
+          <p>{author}</p>
         </div>
         <div className={classes.actionBtn}>
           <button type="button">Comments</button>
-
-          <Button onClick={handleRemoveBook}>Remove</Button>
-
+          <button onClick={() => handleRemoveBook(itemId)} type="button">
+            Remove
+          </button>
           <button type="button">Edit</button>
         </div>
       </div>
@@ -44,12 +45,17 @@ const Book = ({ book }) => {
 };
 
 Book.propTypes = {
-  book: PropTypes.shape({
-    category: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    item_id: PropTypes.string.isRequired,
-  }).isRequired,
+  category: PropTypes.string,
+  title: PropTypes.string,
+  author: PropTypes.string,
+  itemId: PropTypes.string,
+};
+
+Book.defaultProps = {
+  category: 'Nonfiction',
+  title: '',
+  author: '',
+  itemId: 'item1',
 };
 
 export default Book;

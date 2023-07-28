@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { addBook, sendBook } from '../../redux/books/booksSlice';
 import classes from './BookInput.module.css';
-import { addBook } from '../../redux/books/booksSlice';
 
 import Button from '../common/button';
 
 const BookInput = () => {
   const [bookTitle, setBookTitle] = useState('');
   const [authorName, setAuthorName] = useState('');
+
   const dispatch = useDispatch();
 
   const handleAddBook = (e) => {
     e.preventDefault();
+    if (!bookTitle || !authorName) return;
     const newBook = {
       item_id: crypto.randomUUID(),
       title: bookTitle,
@@ -19,6 +21,8 @@ const BookInput = () => {
       category: 'Nonfiction',
     };
     dispatch(addBook(newBook));
+    dispatch(sendBook(newBook));
+
     setAuthorName('');
     setBookTitle('');
   };
