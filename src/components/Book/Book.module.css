@@ -5,22 +5,59 @@
   justify-content: center;
   align-items: center;
   gap: 13rem;
-  border: 1px solid #888;
+  border: 1px solid #cecdcd;
+  background-color: white;
 }
 
-.firstPara {
-  color: dimgray;
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0;
 }
 
-.secondPara {
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
+.authorDetails h2,
+p {
+  margin: 0;
 }
 
-.items h2 {
-  font-weight: 700;
+.category {
+  margin: 0 2.438rem 0.5rem 0;
+  opacity: 0.4;
+  font-size: 1.275rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #020101;
+
+}
+
+.title {
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
   color: #121212;
+}
+
+.author {
+  margin: 0.25rem 0 0.5rem 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.275rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .actionBtn {
@@ -35,6 +72,33 @@
   border: none;
   font-weight: 300;
   color: #4386bf;
+}
+
+.current_Chapter {
+  margin: 0.063rem 0 0.5rem 0;
+  opacity: 0.5;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.213rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.current_Lesson {
+  text-align: left;
+  margin: 0.438rem 0 1rem 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
 }
 
 .btnupdate {
