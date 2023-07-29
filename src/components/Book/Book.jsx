@@ -17,10 +17,10 @@ const Book = ({
   return (
     <li className={classes.listContainer}>
       <div>
-        <div>
-          <p>{category}</p>
-          <h2>{title}</h2>
-          <p>{author}</p>
+        <div className={classes.authorDetails}>
+          <p className={classes.category}>{category}</p>
+          <h2 className={classes.title}>{title}</h2>
+          <p className={classes.author}>{author}</p>
         </div>
         <div className={classes.actionBtn}>
           <button type="button">Comments</button>
@@ -36,8 +36,8 @@ const Book = ({
         <p>Completed</p>
       </div>
       <div>
-        <p>Current Chapter</p>
-        <p>Chapter 17</p>
+        <p className={classes.current_Chapter}>Current Chapter</p>
+        <p className={classes.current_Lesson}>Chapter 17</p>
         <button className={classes.btnupdate} type="button">UPDATE PROGRESS</button>
       </div>
     </li>

@@ -7,38 +7,71 @@
   padding-left: 15rem;
 }
 
-form .button {
-  background-color: blue;
-}
-
 .inputs {
+  margin: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
+  padding: 2rem;
 }
 
 .bookInput {
-  width: 40rem;
-  height: 3rem;
+  width: 15.5rem;
+  height: 2.813rem;
+  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #ddd;
 }
 
 .authorInput {
-  width: 20rem;
-  height: 3rem;
+  width: 17.813rem;
+  height: 2.813rem;
+  padding: 0.813rem 0.938rem 0.563rem 1rem;
+  border-radius: 4px;
+  border: solid 1px #ddd;
 }
 
 .inputs button {
   padding: 1rem 3rem;
   font-size: 1.6rem;
   font-weight: 600;
-  background-color: #0969da;
-  color: aliceblue;
+}
+
+.addBook {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
   border: none;
+  background-color: #0290ff;
+  width: 20rem;
+  padding: 0 3rem;
 }
 
 .inputs input::placeholder {
   font-size: 1.4rem;
   font-weight: 600;
   padding-left: 1rem;
+}
+
+.title {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 2rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
